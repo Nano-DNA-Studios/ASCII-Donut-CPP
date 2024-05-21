@@ -6,13 +6,26 @@
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    std::cout << "Resize your console, once you're ready input (Y) : ";
 
-    Donut donut;
+	char reply;
 
-	donut.drawDonut();
-    
+    std::cin >> reply;
 
+	reply = tolower(reply);
+
+	if (reply == 'y')
+    {
+		Donut donut;
+
+
+		while (true)
+		{
+			donut.A += 0.04f;
+			donut.B += 0.02f;
+			donut.drawDonut();
+		}
+	}
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
