@@ -129,9 +129,11 @@
   <ItemGroup>
     <ClCompile Include="ASCII-Donut-CPP.cpp" />
     <ClCompile Include="Donut.cpp" />
+    <ClCompile Include="Light.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Donut.h" />
+    <ClInclude Include="Light.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
