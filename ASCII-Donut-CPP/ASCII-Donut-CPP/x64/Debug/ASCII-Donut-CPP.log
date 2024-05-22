@@ -1,5 +1,32 @@
-﻿  Light.cpp
-C:\Users\alexe\Desktop\Programming Projects\ASCII-Donut-CPP\ASCII-Donut-CPP\Light.h(31,14): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-  (compiling source file 'Light.cpp')
+﻿  ASCII-Donut-CPP.cpp
+C:\Users\alexe\Desktop\Programming Projects\ASCII-Donut-CPP\ASCII-Donut-CPP\Light.h(62,14): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+  (compiling source file 'ASCII-Donut-CPP.cpp')
+  
+C:\Users\alexe\Desktop\Programming Projects\ASCII-Donut-CPP\ASCII-Donut-CPP\Donut.h(130,30): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'ASCII-Donut-CPP.cpp')
+  
+C:\Users\alexe\Desktop\Programming Projects\ASCII-Donut-CPP\ASCII-Donut-CPP\Donut.h(130,16): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'ASCII-Donut-CPP.cpp')
+  
+C:\Users\alexe\Desktop\Programming Projects\ASCII-Donut-CPP\ASCII-Donut-CPP\Donut.h(130,15): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+  (compiling source file 'ASCII-Donut-CPP.cpp')
+  
+C:\Users\alexe\Desktop\Programming Projects\ASCII-Donut-CPP\ASCII-Donut-CPP\Donut.h(131,31): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'ASCII-Donut-CPP.cpp')
+  
+C:\Users\alexe\Desktop\Programming Projects\ASCII-Donut-CPP\ASCII-Donut-CPP\Donut.h(131,16): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'ASCII-Donut-CPP.cpp')
+  
+C:\Users\alexe\Desktop\Programming Projects\ASCII-Donut-CPP\ASCII-Donut-CPP\Donut.h(131,15): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+  (compiling source file 'ASCII-Donut-CPP.cpp')
+  
+C:\Users\alexe\Desktop\Programming Projects\ASCII-Donut-CPP\ASCII-Donut-CPP\Donut.h(156,88): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'ASCII-Donut-CPP.cpp')
+  
+C:\Users\alexe\Desktop\Programming Projects\ASCII-Donut-CPP\ASCII-Donut-CPP\Donut.h(156,45): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'ASCII-Donut-CPP.cpp')
+  
+C:\Users\alexe\Desktop\Programming Projects\ASCII-Donut-CPP\ASCII-Donut-CPP\Donut.h(156,44): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+  (compiling source file 'ASCII-Donut-CPP.cpp')
   
   ASCII-Donut-CPP.vcxproj -> C:\Users\alexe\Desktop\Programming Projects\ASCII-Donut-CPP\ASCII-Donut-CPP\x64\Debug\ASCII-Donut-CPP.exe

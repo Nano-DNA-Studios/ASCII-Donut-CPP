@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\alexe\\Desktop\\Programming Projects\\ASCII-Donut-CPP\\ASCII-Donut-CPP\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{95A68D84-128C-4431-BB27-BAB0601AC7B5}|ASCII-Donut-CPP.vcxproj|C:\\Users\\alexe\\Desktop\\Programming Projects\\ASCII-Donut-CPP\\ASCII-Donut-CPP\\Light.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{95A68D84-128C-4431-BB27-BAB0601AC7B5}|ASCII-Donut-CPP.vcxproj|solutionrelative:Light.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{95A68D84-128C-4431-BB27-BAB0601AC7B5}|ASCII-Donut-CPP.vcxproj|C:\\Users\\alexe\\Desktop\\Programming Projects\\ASCII-Donut-CPP\\ASCII-Donut-CPP\\ASCII-Donut-CPP.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{95A68D84-128C-4431-BB27-BAB0601AC7B5}|ASCII-Donut-CPP.vcxproj|solutionrelative:ASCII-Donut-CPP.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{95A68D84-128C-4431-BB27-BAB0601AC7B5}|ASCII-Donut-CPP.vcxproj|C:\\Users\\alexe\\Desktop\\Programming Projects\\ASCII-Donut-CPP\\ASCII-Donut-CPP\\Donut.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{95A68D84-128C-4431-BB27-BAB0601AC7B5}|ASCII-Donut-CPP.vcxproj|solutionrelative:Donut.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95A68D84-128C-4431-BB27-BAB0601AC7B5}|ASCII-Donut-CPP.vcxproj|C:\\Users\\alexe\\Desktop\\Programming Projects\\ASCII-Donut-CPP\\ASCII-Donut-CPP\\Light.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{95A68D84-128C-4431-BB27-BAB0601AC7B5}|ASCII-Donut-CPP.vcxproj|solutionrelative:Light.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,43 +22,43 @@
       "DocumentGroups": [
         {
           "DockedWidth": 278,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Light.h",
               "DocumentMoniker": "C:\\Users\\alexe\\Desktop\\Programming Projects\\ASCII-Donut-CPP\\ASCII-Donut-CPP\\Light.h",
               "RelativeDocumentMoniker": "Light.h",
               "ToolTip": "C:\\Users\\alexe\\Desktop\\Programming Projects\\ASCII-Donut-CPP\\ASCII-Donut-CPP\\Light.h",
               "RelativeToolTip": "Light.h",
-              "ViewState": "AQIAABcAAAAAAAAAAAAAACMAAAAQAAAA",
+              "ViewState": "AQIAACQAAAAAAAAAAAAAABsAAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-05-21T20:01:31.921Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Donut.h",
               "DocumentMoniker": "C:\\Users\\alexe\\Desktop\\Programming Projects\\ASCII-Donut-CPP\\ASCII-Donut-CPP\\Donut.h",
               "RelativeDocumentMoniker": "Donut.h",
               "ToolTip": "C:\\Users\\alexe\\Desktop\\Programming Projects\\ASCII-Donut-CPP\\ASCII-Donut-CPP\\Donut.h",
               "RelativeToolTip": "Donut.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAJEAAAAtAAAA",
+              "ViewState": "AQIAABUAAAAAAAAAAAAUwBoAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-05-21T01:36:27.309Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "ASCII-Donut-CPP.cpp",
               "DocumentMoniker": "C:\\Users\\alexe\\Desktop\\Programming Projects\\ASCII-Donut-CPP\\ASCII-Donut-CPP\\ASCII-Donut-CPP.cpp",
               "RelativeDocumentMoniker": "ASCII-Donut-CPP.cpp",
               "ToolTip": "C:\\Users\\alexe\\Desktop\\Programming Projects\\ASCII-Donut-CPP\\ASCII-Donut-CPP\\ASCII-Donut-CPP.cpp",
               "RelativeToolTip": "ASCII-Donut-CPP.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAOAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABIAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-05-21T01:32:51.018Z",
               "EditorCaption": ""

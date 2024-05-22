@@ -3,6 +3,7 @@
 #include <iostream>
 #include <Windows.h>
 #include <algorithm>
+#include "Light.h"
 
 class Donut
 {
@@ -33,6 +34,8 @@ public:
 
 	float K1;
 
+    Light* LightSource;
+
 
 
 private:
@@ -53,16 +56,12 @@ private:
 
 	float pi = 3.141f;
 
-	int lightIntensity = 1;
-
-
-
 #pragma endregion
 
 
 public:
 
-	Donut()
+	Donut(Light* light) : LightSource(light)
 	{
 		getConsoleSize(_width, _height);
 	
@@ -70,8 +69,6 @@ public:
 		_buf = new char[size];
 
 		K1 = _width * K2 * 3 / (24 * (R1 + R2));
-
-		//std::cout << "Width: " << _width << " Height: " << _height << std::endl;
 	}
 
 	void getConsoleSize(int& columns, int& rows) {
@@ -85,7 +82,6 @@ public:
 		return max(lower, min(n, upper));
     }
 
-
 	void drawDonut()
 	{
 		int sizeOfScreen = _width * _height;
@@ -94,7 +90,6 @@ public:
 
 		std::fill(zBuffer, zBuffer + sizeOfScreen , 0.0f);
 		std::fill(_buf, _buf + sizeOfScreen, ' ');
-
 
 		float cosA = cos(A);
 		float sinA = sin(A);
@@ -132,11 +127,9 @@ public:
                 int xp = (int)(_width / 2 + K1 * ooz * x);
                 int yp = (int)(_height / 2 - K1 * ooz * y);
 
-                
 				xp = clamp(xp, 0, _width - 1);
 				yp = clamp(yp, 0, _height - 1);
                
-
                 int idx = xp + yp * _width;
 
                 float nx = cosTheta;
@@ -152,17 +145,14 @@ public:
                 Ny = Ny / mag;
                 Nz = Nz / mag;
 
-
-                //float Luminence = Nx * LightSource.NormalizedX + Ny * LightSource.NormalizedY + Nz * LightSource.NormalizedZ;
-                float Luminence = Nx * 1 + Ny * 0 + Nz * 1;
+                float Luminence = Nx * LightSource->NormalizedX + Ny * LightSource->NormalizedY + Nz * LightSource->NormalizedZ;
 
                 if (idx > sizeOfScreen || idx < 0)
                     continue;
 
                 if (ooz > zBuffer[idx])
                 {
-                    //int luminance_index = (int)((Luminence + 1) * (_luminenceValuesLength) / (2) * LightSource.GetIntensity(x, y, z));
-                    int luminance_index = (int)((Luminence + 1) * (_luminenceValuesLength) / (2) * lightIntensity);
+                    int luminance_index = (int)((Luminence + 1) * (_luminenceValuesLength) / (2) * LightSource->GetIntensity(x, y, z));
                     luminance_index = clamp(luminance_index, 0, _luminenceValuesLength -1);
                     zBuffer[idx] = ooz;
                     _buf[idx] = _luminenceVals[luminance_index];
@@ -207,12 +197,5 @@ public:
         _lastHeight = _height;
         _lastWidth = _width;
     }
-        
-
-
-
-
-
-
 };
 

@@ -16,14 +16,15 @@ int main()
 
 	if (reply == 'y')
     {
-		Donut donut;
+		Light* light = new Light(0, 1, -1, 50);
 
+		Donut* donut = new Donut(light);
 
 		while (true)
 		{
-			donut.A += 0.04f;
-			donut.B += 0.02f;
-			donut.drawDonut();
+			donut->A += 0.04f;
+			donut->B += 0.02f;
+			donut->drawDonut();
 		}
 	}
 }

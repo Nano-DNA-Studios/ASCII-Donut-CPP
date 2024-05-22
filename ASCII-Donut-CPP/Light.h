@@ -7,28 +7,25 @@ class Light
 {
 public:
 
-	float X;
+	float X, Y ,Z;
 
-	float Y;
+	int Strength;
 
-	float Z;
+	float Magnitude;
 
-	float Strength;
+	float NormalizedX, NormalizedY, NormalizedZ;
 
 private:
 
 	const float pi = 3.141f;
 
-
-
-
 public:
-	Light(float x, float y, float z, int strength)
+	Light(float x, float y, float z, int strength) : X(x), Y(y), Z(z), Strength(strength)
 	{
-		X = x;
-		Y = y;
-		Z = z;
-		Strength = strength;
+		Magnitude = sqrtf(X * X + Y * Y + Z * Z);
+		NormalizedX = Magnitude > 0 ? X / Magnitude : X;
+		NormalizedY = Magnitude > 0 ? Y / Magnitude : Y;
+		NormalizedZ = Magnitude > 0 ? Z / Magnitude : Z;
 	}
 	
 	/// <summary>
@@ -46,14 +43,23 @@ public:
 
 		float r = sqrtf(rx * rx + ry * ry + rz + rz);
 
-		return r > 0 ? Strength / (4 * pi * r) : Strength / (4 * pi);
+		return r > 0 ? (float)Strength / (4 * pi * r) : (float)Strength / (4 * pi);
 	}
 
+	void UpdatePosition(float x, float y, float z)
+	{
+		X = x;
+		Y = y;
+		Z = z;
+		Magnitude = sqrtf(X * X + Y * Y + Z * Z);
+		NormalizedX = Magnitude > 0 ? X / Magnitude : X;
+		NormalizedY = Magnitude > 0 ? Y / Magnitude : Y;
+		NormalizedZ = Magnitude > 0 ? Z / Magnitude : Z;
+	}
 
-
-
-
-
-
+	void UpdateStrength(float strength)
+	{
+		Strength = strength;
+	}
 };
 
